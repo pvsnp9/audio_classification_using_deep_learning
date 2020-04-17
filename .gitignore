@@ -3,3 +3,4 @@ sounds/
 samples/
 cleanfiles/
 .vscode/
+.DS_Store
