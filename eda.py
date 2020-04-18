@@ -160,10 +160,3 @@ if len(os.listdir('cleanfiles')) == 0:
         signal, rate = librosa.load('sounds/'+f, sr = 16000)
         mask = envelope(signal, rate, 0.0005)
         wavfile.write(filename='cleanfiles/'+f, rate = rate, data= signal[mask])
-
-
-
-
-
-
-

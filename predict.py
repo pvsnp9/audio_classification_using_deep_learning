@@ -28,7 +28,8 @@ def build_predictions(audio_dir):
         c = classes.index(label)
         y_prob = []
         
-        for i in range(0, signal.shape[0]-config.step, config.step):
+        print("Classifying audio files")
+        for i in tqdm(range(0, signal.shape[0]-config.step, config.step)):
             sample = signal[i:i+config.step]
             x = mfcc(sample, rate, numcep=config.nfeat, nfilt=config.nfilt, nfft=config.nfft)
             x = (x-config._min) / (config._max - config._min)
