@@ -137,7 +137,7 @@ ax.pie(class_dist, labels=class_dist.index, autopct='%1.1f%%',
 ax.axis('equal')
 plt.show()
 
-config = Config(mode='time')
+config = Config(mode='conv')
 
 if config.mode == 'conv':
     X, y = build_rand_feat()
