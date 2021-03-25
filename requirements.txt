@@ -57,7 +57,7 @@ pyrsistent==0.15.4
 python-dateutil==2.7.5
 python_speech_features==0.6
 pytz==2018.7
-PyYAML==3.13
+PyYAML==5.4
 pyzmq==18.0.2
 qtconsole==4.5.2
 Send2Trash==1.5.0
